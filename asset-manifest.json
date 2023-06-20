@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/Davwed0/Webscraper/tree/master/university_hill/static/js/main.2cd1245f.js",
-    "index.html": "/Davwed0/Webscraper/tree/master/university_hill/index.html",
-    "main.2cd1245f.js.map": "/Davwed0/Webscraper/tree/master/university_hill/static/js/main.2cd1245f.js.map"
+    "main.js": "/Davwed0/Webscraper/static/js/main.2cd1245f.js",
+    "index.html": "/Davwed0/Webscraper/index.html",
+    "main.2cd1245f.js.map": "/Davwed0/Webscraper/static/js/main.2cd1245f.js.map"
   },
   "entrypoints": [
     "static/js/main.2cd1245f.js"
