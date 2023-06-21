@@ -20,20 +20,20 @@ function DataTable() {
   }, []);
 
   const columns = [
-    { field: 'transactionTime', headerName: 'Transaction Time', type: 'Date', width: 'auto'},
-    { field: 'propertyName', headerName: 'Property Name', width: 'auto'},
-    { field: 'tower', headerName: 'Tower', width: 'auto'},
-    { field: 'floor', headerName: 'Floor', width: 'auto'},
-    { field: 'unit', headerName: 'Unit', width: 'auto'},
-    { field: 'transactionAmount', headerName: 'Transaction Amount', width: 'auto'},
-    { field: 'saleableArea', headerName: 'Saleable Area', width: 'auto'},
-    { field: 'unitPrice', headerName: 'Unit Price / sq. ft', width: 'auto'},
+    { field: 'transactionTime', headerName: 'Transaction Time', type: 'Date', minWidth: 150},
+    { field: 'propertyName', headerName: 'Property Name', minWidth: 150},
+    { field: 'tower', headerName: 'Tower', minWidth: 100},
+    { field: 'floor', headerName: 'Floor', minWidth: 80},
+    { field: 'unit', headerName: 'Unit', minWidth: 80},
+    { field: 'transactionAmount', headerName: 'Transaction Amount', minWidth: 160},
+    { field: 'saleableArea', headerName: 'Saleable Area', minWidth: 120},
+    { field: 'unitPrice', headerName: 'Unit Price / sq. ft', minWidth: 140},
   ];
 
   return (
-    <Paper sx={{margin:'auto', overflow:'hidden', width:'90%'}}>
+    <Paper sx={{width:'90%', margin:'auto', overflow:'hidden'}}>
           {loading ? <LinearProgress variant="determinate" style={{ width: "100vh", marginRight: "4px" }}
- /> : <DataGrid
+ /> : <DataGrid sx={{maxHeight:"580"}}
           rows={rows}
           columns={columns}
           getRowId={(row) => row.id}
