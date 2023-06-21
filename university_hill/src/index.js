@@ -10,7 +10,7 @@ function DataTable() {
 
   useEffect(() => {
     setLoading(true); // set loading to true before fetching data
-    fetch('https://webscraper-davwed0.vercel.app/api/data')
+    fetch('https://webscraper-two.vercel.app/api/data')
       .then(response => response.json())
       .then(data => {
         setRows(data);
@@ -31,8 +31,8 @@ function DataTable() {
   ];
 
   return (
-    <Paper sx={{width: '95%', overflow: 'hidden', margin: "auto auto"}}>
-          {loading ? <LinearProgress variant="determinate" style={{ width: "100vh", marginRight: "4px" }}
+    <Paper sx={{width: '80%', overflow: 'hidden', margin: "auto auto", alignContent: 'center'}}>
+          {loading ? <LinearProgress variant="determinate" style={{ width: "100%" }}
  /> : <DataGrid sx={{maxHeight: 590}}
           rows={rows}
           columns={columns}
