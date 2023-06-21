@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.js": "/Webscraper/static/js/main.c36b9cbe.js",
+    "main.css": "/Webscraper/static/css/main.aa52aba2.css",
+    "main.js": "/Webscraper/static/js/main.c6ea1fc4.js",
     "index.html": "/Webscraper/index.html",
-    "main.c36b9cbe.js.map": "/Webscraper/static/js/main.c36b9cbe.js.map"
+    "main.aa52aba2.css.map": "/Webscraper/static/css/main.aa52aba2.css.map",
+    "main.c6ea1fc4.js.map": "/Webscraper/static/js/main.c6ea1fc4.js.map"
   },
   "entrypoints": [
-    "static/js/main.c36b9cbe.js"
+    "static/css/main.aa52aba2.css",
+    "static/js/main.c6ea1fc4.js"
   ]
 }
