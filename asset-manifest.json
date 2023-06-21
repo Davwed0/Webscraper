@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/Webscraper/static/js/main.2cd1245f.js",
-    "index.html": "/Webscraper/index.html",
-    "main.2cd1245f.js.map": "/Webscraper/static/js/main.2cd1245f.js.map"
+    "main.js": "/Webscraper/university_hill/static/js/main.2cd1245f.js",
+    "index.html": "/Webscraper/university_hill/index.html",
+    "main.2cd1245f.js.map": "/Webscraper/university_hill/static/js/main.2cd1245f.js.map"
   },
   "entrypoints": [
     "static/js/main.2cd1245f.js"
