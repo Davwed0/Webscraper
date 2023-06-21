@@ -9,7 +9,7 @@ function DataTable() {
 
   useEffect(() => {
     setLoading(true); // set loading to true before fetching data
-    fetch('http://localhost:5000/api/data')
+    fetch('https://webscraper-davwed0.vercel.app/api/data')
       .then(response => response.json())
       .then(data => {
         setRows(data);
