@@ -21,7 +21,7 @@ function DataTable() {
 
   const columns = [
     { field: 'transactionTime', headerName: 'Transaction Time', type: 'Date', minWidth: 150},
-    { field: 'propertyName', headerName: 'Property Name', minWidth: 150},
+    { field: 'propertyName', headerName: 'Property Name', minWidth: 170},
     { field: 'tower', headerName: 'Tower', minWidth: 100},
     { field: 'floor', headerName: 'Floor', minWidth: 80},
     { field: 'unit', headerName: 'Unit', minWidth: 80},
@@ -31,9 +31,9 @@ function DataTable() {
   ];
 
   return (
-    <Paper sx={{width:'90%', overflow:'hidden', margin:'auto', alignItems:'center', justifySelf:'center', height:'100vh'}}>
+    <Paper sx={{width: '95%', overflow: 'hidden', margin: "auto auto"}}>
           {loading ? <LinearProgress variant="determinate" style={{ width: "100vh", marginRight: "4px" }}
- /> : <DataGrid sx={{maxHeight:"580"}}
+ /> : <DataGrid sx={{maxHeight: 590}}
           rows={rows}
           columns={columns}
           getRowId={(row) => row.id}
