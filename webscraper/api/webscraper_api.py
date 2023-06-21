@@ -1,6 +1,4 @@
 import requests
-import json
-import pprint
 import pandas as pd
 
 from flask import Flask, jsonify
@@ -8,6 +6,11 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 cors = CORS(app)
+
+
+@app.route("/")
+def home():
+    return "heellooo"
 
 
 # Define a route to provide data to the frontend
@@ -60,7 +63,3 @@ def get_data():
     )
 
     return df.to_json(orient="records", force_ascii=False)
-
-
-if __name__ == "__main__":
-    app.run(debug=True)
