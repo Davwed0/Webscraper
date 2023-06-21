@@ -31,7 +31,7 @@ function DataTable() {
   ];
 
   return (
-    <Paper sx={{width:'90%', overflow:'hidden', margin:'auto'}}>
+    <Paper sx={{width:'90%', overflow:'hidden', margin:'auto', alignItems:'center', justifySelf:'center', height:'100vh'}}>
           {loading ? <LinearProgress variant="determinate" style={{ width: "100vh", marginRight: "4px" }}
  /> : <DataGrid sx={{maxHeight:"580"}}
           rows={rows}
