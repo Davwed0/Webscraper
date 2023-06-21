@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/Webscraper/static/js/main.71e47086.js",
+    "main.js": "/Webscraper/static/js/main.e61b6a78.js",
     "index.html": "/Webscraper/index.html",
-    "main.71e47086.js.map": "/Webscraper/static/js/main.71e47086.js.map"
+    "main.e61b6a78.js.map": "/Webscraper/static/js/main.e61b6a78.js.map"
   },
   "entrypoints": [
-    "static/js/main.71e47086.js"
+    "static/js/main.e61b6a78.js"
   ]
 }
