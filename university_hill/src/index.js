@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
 import { DataGrid } from '@mui/x-data-grid';
 import { LinearProgress } from '@mui/joy/';
+import { Paper } from '@mui/material/Paper';
 
 function DataTable() {
   const [rows, setRows] = useState([]);
@@ -19,25 +20,18 @@ function DataTable() {
   }, []);
 
   const columns = [
-    { field: 'transactionTime', headerName: 'Transaction Time', type: 'Date', width: 170},
-    { field: 'propertyName', headerName: 'Property Name', width: 170},
-    { field: 'tower', headerName: 'Tower', width: 120},
-    { field: 'floor', headerName: 'Floor', width: 80},
-    { field: 'unit', headerName: 'Unit', width: 80},
-    { field: 'transactionAmount', headerName: 'Transaction Amount', width: 180},
-    { field: 'saleableArea', headerName: 'Saleable Area', width: 140},
-    { field: 'unitPrice', headerName: 'Unit Price / sq. ft', width: 160},
+    { field: 'transactionTime', headerName: 'Transaction Time', type: 'Date', width: 'auto'},
+    { field: 'propertyName', headerName: 'Property Name', width: 'auto'},
+    { field: 'tower', headerName: 'Tower', width: 'auto'},
+    { field: 'floor', headerName: 'Floor', width: 'auto'},
+    { field: 'unit', headerName: 'Unit', width: 'auto'},
+    { field: 'transactionAmount', headerName: 'Transaction Amount', width: 'auto'},
+    { field: 'saleableArea', headerName: 'Saleable Area', width: 'auto'},
+    { field: 'unitPrice', headerName: 'Unit Price / sq. ft', width: 'auto'},
   ];
 
   return (
-    <div
-      style={{
-        position: 'absolute',
-        top: '50%',
-        left: '50%',
-        transform: "translate(-50%, -50%)",
-      }}
-    >
+    <Paper sx={{margin:'auto', overflow:'hidden', width:'90%'}}>
           {loading ? <LinearProgress variant="determinate" style={{ width: "100vh", marginRight: "4px" }}
  /> : <DataGrid
           rows={rows}
@@ -51,7 +45,7 @@ function DataTable() {
           }}
           pageSizeOptions={[5, 10]}
           />}
-    </div>
+    </Paper>
   );
 }
 

@@ -1,5 +1,6 @@
 import requests
 import pandas as pd
+import datetime
 
 from flask import Flask, jsonify
 from flask_cors import CORS
@@ -47,6 +48,12 @@ def get_data():
         ],
     ]
     df["index_col"] = df.index
+    df["dateSold"] = pd.to_datetime(df["dateSold"]).dt.strftime("%Y/%m/%d")
+    df["sellPrice"] = (df["sellPrice"] / 10000).apply(
+        lambda x: "售 ${:,} 萬".format(round(x))
+    )
+    df["flat.flatSaleableArea"] = df["flat.flatSaleableArea"].astype(str) + " 呎"
+    df["saleablePrice"] = (df["saleablePrice"]).apply(lambda x: "${:,.0f}/呎".format(x))
 
     df = df.rename(
         columns={
