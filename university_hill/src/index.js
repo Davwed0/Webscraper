@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
 import { DataGrid } from '@mui/x-data-grid';
 import { LinearProgress } from '@mui/joy/';
-import { Paper } from '@mui/material/Paper';
+import { Paper } from '@mui/material/';
 
 function DataTable() {
   const [rows, setRows] = useState([]);
